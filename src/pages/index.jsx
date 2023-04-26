@@ -1,13 +1,18 @@
+import Presentation from '@/components/Presentation';
+import About from '@/components/About';
+import Projects from '@/components/Projects';
+import Contact from '@/components/Contact';
+
 export default function Home() {
   return (
     <main>
-      <div id='home'>Home Page</div>
+      <Presentation />
 
-      <div id='about'>About</div>
+      <About />
 
-      <div id='projects'>Proyectos</div>
+      <Projects />
 
-      <div id='contact'>Contacto</div>
+      <Contact />
     </main>
   );
 }
