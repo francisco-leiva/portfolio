@@ -10,8 +10,8 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className='w-full h-16 bg-black sticky top-0 text-lg'>
-      <div className='max-w-4xl h-full mx-auto flex justify-between items-center'>
+    <header className='w-full h-16 bg-black sticky top-0 text-lg'>
+      <nav className='max-w-4xl h-full mx-auto flex justify-between items-center'>
         <div>
           <Link href='/'>
             <CodeIcon />
@@ -27,7 +27,7 @@ export default function Navbar() {
             );
           })}
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 }
