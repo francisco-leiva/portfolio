@@ -10,7 +10,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className='w-full h-16 bg-black sticky top-0 text-lg'>
+    <header className='w-full h-16 bg-black sticky top-0 text-lg z-50'>
       <nav className='max-w-4xl h-full mx-auto flex justify-between items-center'>
         <div>
           <Link href='/'>
