@@ -30,3 +30,45 @@ export function Blob() {
     </div>
   );
 }
+
+export function GitHubIcon() {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      strokeWidth='1.5'
+      color='#000'
+      viewBox='0 0 24 24'
+    >
+      <path
+        stroke='#000'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+        d='M16 22.027v-2.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7a5.44 5.44 0 00-1.5-3.75 5.07 5.07 0 00-.09-3.77s-1.18-.35-3.91 1.48a13.38 13.38 0 00-7 0c-2.73-1.83-3.91-1.48-3.91-1.48A5.07 5.07 0 005 5.797a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7a3.37 3.37 0 00-.94 2.58v2.87m0-2c-3 .973-5.5 0-7-3'
+      ></path>
+    </svg>
+  );
+}
+
+export function LinkedInIcon() {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      stroke='currentColor'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      strokeWidth='2'
+      className='icon icon-tabler icon-tabler-brand-linkedin'
+      viewBox='0 0 24 24'
+    >
+      <path stroke='none' d='M0 0h24v24H0z'></path>
+      <path d='M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2zM8 11v5M8 8v.01M12 16v-5'></path>
+      <path d='M16 16v-3a2 2 0 00-4 0'></path>
+    </svg>
+  );
+}
