@@ -4,13 +4,21 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import useElementOnScreen from '@/hooks/useElementOnScreen';
 
 export default function Projects() {
-  return (
-    <section id='projects' className='max-w-4xl h-fit mx-auto my-10'>
-      <h3 className='my-4 text-center'>Proyectos</h3>
+  const [containerRef, isVisible] = useElementOnScreen();
 
-      <div className='flex flex-wrap justify-around gap-4'>
+  return (
+    <section id='projects' className='max-w-4xl h-fit mx-auto mb-10'>
+      <h3 className='my-4 pt-20 text-center'>Proyectos</h3>
+
+      <div
+        ref={containerRef}
+        className={`flex flex-wrap justify-around gap-4 ${
+          isVisible ? 'visible' : ''
+        }`}
+      >
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             sx={{ height: 140 }}
