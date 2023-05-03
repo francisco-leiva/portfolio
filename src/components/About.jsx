@@ -1,7 +1,7 @@
 export default function About() {
   return (
-    <section id='about' className='max-w-4xl h-full mx-auto mb-10'>
-      <h3 className='pt-20 text-center'>About</h3>
+    <section id='about' className='max-w-4xl h-full mx-auto mb-10 pt-16'>
+      <h3 className='text-[#f44336] font-bold text-xl text-center'>ABOUT</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
         recusandae repellat eligendi ab neque voluptates, itaque cumque

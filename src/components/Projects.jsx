@@ -10,8 +10,10 @@ export default function Projects() {
   const [containerRef, isVisible] = useElementOnScreen();
 
   return (
-    <section id='projects' className='max-w-4xl h-fit mx-auto mb-10'>
-      <h3 className='my-4 pt-20 text-center'>Proyectos</h3>
+    <section id='projects' className='max-w-4xl h-fit mx-auto mb-10 pt-16'>
+      <h3 className='my-4 text-[#f44336] font-bold text-xl text-center'>
+        PROYECTOS
+      </h3>
 
       <div
         ref={containerRef}
