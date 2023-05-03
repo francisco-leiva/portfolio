@@ -1,37 +1,35 @@
 export default function Contact() {
   return (
-    <section id='contact' className='max-w-4xl h-80 mx-auto mb-10'>
-      <h3 className='pt-20 text-center'>Contacto</h3>
+    <section id='contact' className='max-w-4xl h-fit mx-auto mb-10 pt-10'>
+      <h3 className='text-[#f44336] font-bold text-xl text-center'>CONTACTO</h3>
 
-      <form>
-        <div>
-          <label htmlFor='form_name'>Nombre</label>
+      <form className='w-[30rem] mx-auto'>
+        <div className='my-5'>
           <input
-            id='form_name'
             type='text'
-            className='border border-black border-solid'
+            placeholder='Nombre'
+            className='w-full p-2 bg-[#efefef] text-lg rounded'
           />
         </div>
 
-        <div>
-          <label htmlFor='form_mail'>Email</label>
+        <div className='my-5'>
           <input
-            id='form_mail'
             type='email'
-            className='border border-black border-solid'
+            placeholder='Email'
+            className='w-full p-2 bg-[#efefef] text-lg rounded'
           />
         </div>
 
-        <div>
-          <label htmlFor='form_message'>Mensaje</label>
+        <div className='my-5 mb-4'>
           <textarea
-            id='form_message'
             type='text'
-            className='border border-black border-solid'
+            placeholder='Escribe tu mensaje'
+            rows={5}
+            className='w-full p-2 bg-[#efefef] text-lg rounded resize-none'
           />
         </div>
 
-        <button className='bg-red-600 border border-black border-solid'>
+        <button className='w-full p-2 bg-[#f44336] font-medium text-white text-lg rounded'>
           Enviar
         </button>
       </form>
