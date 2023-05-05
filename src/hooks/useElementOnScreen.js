@@ -10,11 +10,14 @@ export default function useElementOnScreen() {
   };
 
   useEffect(() => {
-    const observer = new IntersectionObserver(callbackFunction);
-    if (containerRef.current) observer.observe(containerRef.current);
+    const observer = new IntersectionObserver(callbackFunction, {
+      rootMargin: '0px',
+      threshold: 0.3,
+    });
+    observer.observe(containerRef.current);
 
     return () => {
-      if (containerRef.current) observer.unobserve(containerRef.current);
+      observer.disconnect();
     };
   }, [containerRef]);
 
