@@ -34,6 +34,7 @@ export function Blob() {
 export function GitHubIcon() {
   return (
     <svg
+      className='w-10 h-10'
       xmlns='http://www.w3.org/2000/svg'
       width='24'
       height='24'
@@ -55,6 +56,7 @@ export function GitHubIcon() {
 export function LinkedInIcon() {
   return (
     <svg
+      className='w-10 h-10'
       xmlns='http://www.w3.org/2000/svg'
       width='24'
       height='24'
@@ -63,7 +65,6 @@ export function LinkedInIcon() {
       strokeLinecap='round'
       strokeLinejoin='round'
       strokeWidth='2'
-      className='icon icon-tabler icon-tabler-brand-linkedin'
       viewBox='0 0 24 24'
     >
       <path stroke='none' d='M0 0h24v24H0z'></path>

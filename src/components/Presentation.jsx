@@ -2,19 +2,17 @@ import Link from 'next/link';
 import { Blob, LinkedInIcon, GitHubIcon } from './Icons';
 
 export default function Presentation() {
-  const greeting = "I'm Francisco Leiva";
+  const greeting = '¡Hola, soy Francisco Leiva!';
 
   return (
     <section className='w-full h-screen'>
-      <div className='max-w-4xl h-full mx-auto flex justify-around items-center'>
-        <div className='w-80'>
-          <h2 className='text-2xl'>{greeting}</h2>
+      <div className='max-w-4xl h-full mx-auto flex justify-between items-center'>
+        <div className='w-96'>
+          <h2 className='text-5xl'>{greeting}</h2>
 
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequatur dolor error quisquam iste dicta unde suscipit excepturi
-            modi impedit optio? Aliquid accusantium reprehenderit assumenda,
-            eius eos maiores fugiat itaque iste.
+          <p className='my-6 text-xl'>
+            Desarrollador Front-end especializado en JavaScript. Apasionado por
+            la tecnología y la programación.
           </p>
 
           <div>
@@ -24,7 +22,7 @@ export default function Presentation() {
               </Link>
             </button>
 
-            <button>
+            <button className='mx-4'>
               <Link
                 href='https://www.linkedin.com/in/franciscoleiva14/'
                 target='_blank'
