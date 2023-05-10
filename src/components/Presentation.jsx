@@ -6,7 +6,7 @@ export default function Presentation() {
 
   return (
     <section className='w-full h-screen'>
-      <div className='max-w-4xl h-full mx-auto flex justify-between items-center'>
+      <div className='max-w-4xl h-full mx-auto flex justify-between lg:justify-around items-center'>
         <div className='w-96'>
           <h2 className='text-5xl'>{greeting}</h2>
 

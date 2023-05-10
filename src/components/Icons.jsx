@@ -1,4 +1,4 @@
-export function NavbarIcon() {
+export function NavbarLogo() {
   return (
     <svg
       className='w-12 h-12 text-white'
@@ -17,6 +17,45 @@ export function NavbarIcon() {
         strokeLinejoin='round'
         d='M13.5 6L10 18.5m-3.5-10L3 12l3.5 3.5m11-7L21 12l-3.5 3.5'
       ></path>
+    </svg>
+  );
+}
+
+export function HamburgerMenu() {
+  return (
+    <svg
+      className='w-10 h-10 text-white'
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      stroke='currentColor'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      strokeWidth='2'
+      viewBox='0 0 24 24'
+    >
+      <path stroke='none' d='M0 0h24v24H0z'></path>
+      <path d='M4 6h16M4 12h16M4 18h16'></path>
+    </svg>
+  );
+}
+
+export function CloseIcon() {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      fill='none'
+      stroke='currentColor'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      strokeWidth='2'
+      viewBox='0 0 24 24'
+    >
+      <path stroke='none' d='M0 0h24v24H0z'></path>
+      <path d='M18 6L6 18M6 6l12 12'></path>
     </svg>
   );
 }

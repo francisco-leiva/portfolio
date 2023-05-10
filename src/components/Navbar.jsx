@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { NavbarIcon } from './Icons';
+import { NavbarLogo, HamburgerMenu, CloseIcon } from './Icons';
 
 export default function Navbar() {
   const links = [
@@ -11,14 +11,20 @@ export default function Navbar() {
 
   return (
     <header className='w-full h-16 bg-black fixed text-lg z-50'>
-      <nav className='max-w-4xl h-full mx-auto flex justify-between items-center'>
+      <nav className='max-w-4xl h-full mx-auto px-2 flex justify-between items-center md:px-0'>
         <div>
           <Link href='/'>
-            <NavbarIcon />
+            <NavbarLogo />
           </Link>
         </div>
 
-        <ul className='text-white'>
+        <div className='sm:hidden'>
+          <button className='my-2'>
+            <HamburgerMenu />
+          </button>
+        </div>
+
+        <ul className='hidden text-white sm:inline'>
           {links.map((link, index) => {
             return (
               <li key={index} className='inline mx-5 first:ml-0 last:mr-0'>

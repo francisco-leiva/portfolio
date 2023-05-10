@@ -1,7 +1,6 @@
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import useElementOnScreen from '@/hooks/useElementOnScreen';
 import { useEffect } from 'react';
@@ -55,18 +54,20 @@ export default function Projects() {
               </Typography>
             </CardContent>
 
-            <CardActions>
-              <Button size='small'>
-                <Link href='/'>
-                  <WorldIcon />
-                </Link>
-              </Button>
+            <CardActions className='flex justify-center'>
+              <Link
+                href='https://weather-app-franciscoleiva.netlify.app/'
+                className='px-4'
+              >
+                <WorldIcon />
+              </Link>
 
-              <Button size='small'>
-                <Link href='/'>
-                  <CodeIcon />
-                </Link>
-              </Button>
+              <Link
+                href='https://github.com/francisco-leiva/weather-app'
+                className='px-4'
+              >
+                <CodeIcon />
+              </Link>
             </CardActions>
           </Card>
         </article>
@@ -95,18 +96,17 @@ export default function Projects() {
               </Typography>
             </CardContent>
 
-            <CardActions>
-              <Button size='small'>
-                <Link href='/'>
-                  <WorldIcon />
-                </Link>
-              </Button>
+            <CardActions className='flex justify-center'>
+              <Link href='https://claroarg-react.netlify.app/' className='px-4'>
+                <WorldIcon />
+              </Link>
 
-              <Button size='small'>
-                <Link href='/'>
-                  <CodeIcon />
-                </Link>
-              </Button>
+              <Link
+                href='https://github.com/francisco-leiva/react-js'
+                className='px-4'
+              >
+                <CodeIcon />
+              </Link>
             </CardActions>
           </Card>
         </article>
@@ -139,18 +139,17 @@ export default function Projects() {
               </Typography>
             </CardContent>
 
-            <CardActions>
-              <Button size='small'>
-                <Link href='/'>
-                  <WorldIcon />
-                </Link>
-              </Button>
+            <CardActions className='flex justify-center'>
+              <Link href='https://blanco-y-negro.netlify.app/' className='px-4'>
+                <WorldIcon />
+              </Link>
 
-              <Button size='small'>
-                <Link href='/'>
-                  <CodeIcon />
-                </Link>
-              </Button>
+              <Link
+                href='https://github.com/francisco-leiva/javascript'
+                className='px-4'
+              >
+                <CodeIcon />
+              </Link>
             </CardActions>
           </Card>
         </article>
@@ -179,18 +178,20 @@ export default function Projects() {
               </Typography>
             </CardContent>
 
-            <CardActions>
-              <Button size='small'>
-                <Link href='/'>
-                  <WorldIcon />
-                </Link>
-              </Button>
+            <CardActions className='flex justify-center'>
+              <Link
+                href='https://advice-generator-franciscoleiva.netlify.app/'
+                className='px-4'
+              >
+                <WorldIcon />
+              </Link>
 
-              <Button size='small'>
-                <Link href='/'>
-                  <CodeIcon />
-                </Link>
-              </Button>
+              <Link
+                href='https://github.com/francisco-leiva/advice-generator-app'
+                className='px-4'
+              >
+                <CodeIcon />
+              </Link>
             </CardActions>
           </Card>
         </article>

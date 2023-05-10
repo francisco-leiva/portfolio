@@ -3,7 +3,7 @@ export default function Contact() {
     <section id='contact' className='max-w-4xl h-fit mx-auto mb-10 pt-10'>
       <h3 className='text-[#f44336] font-bold text-xl text-center'>CONTACTO</h3>
 
-      <form className='w-[30rem] mx-auto'>
+      <form className='max-w-lg mx-auto'>
         <div className='my-5'>
           <input
             type='text'
