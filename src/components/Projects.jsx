@@ -32,7 +32,7 @@ export default function Projects() {
 
       <div ref={containerRef} className={'flex flex-wrap justify-around gap-4'}>
         <article className='card'>
-          <Card sx={{ maxWidth: 345 }} className='h-[25rem]'>
+          <Card sx={{ maxWidth: 345 }} className='h-96'>
             <Image src={weatherApp} alt='Weather App' sx={{ height: 140 }} />
 
             <CardContent>
@@ -50,9 +50,8 @@ export default function Projects() {
                 color='text.secondary'
                 className='text-base text-justify'
               >
-                Este proyecto fue inspirado en la aplicación del tiempo de
-                celulares Samsung. Dependiendo del tipo de clima, la aplicación
-                cambia de color.
+                Copia de la aplicación del tiempo de celulares Samsung.
+                Dependiendo del tipo de clima, la aplicación cambia de color.
               </Typography>
             </CardContent>
 
@@ -73,7 +72,7 @@ export default function Projects() {
         </article>
 
         <article className='card'>
-          <Card sx={{ maxWidth: 345 }} className='h-[25rem]'>
+          <Card sx={{ maxWidth: 345 }} className='h-96'>
             <Image src={claroApp} alt='Weather App' sx={{ height: 140 }} />
 
             <CardContent>
@@ -113,7 +112,7 @@ export default function Projects() {
         </article>
 
         <article className='card'>
-          <Card sx={{ maxWidth: 345 }} className='h-[25rem]'>
+          <Card sx={{ maxWidth: 345 }} className='h-96'>
             <Image
               src={blancoYNegroApp}
               alt='Weather App'
@@ -157,7 +156,7 @@ export default function Projects() {
         </article>
 
         <article className='card'>
-          <Card sx={{ maxWidth: 345 }} className='h-[25rem]'>
+          <Card sx={{ maxWidth: 345 }} className='h-96'>
             <Image src={adviceApp} alt='Weather App' sx={{ height: 140 }} />
 
             <CardContent>
