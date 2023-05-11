@@ -44,6 +44,7 @@ export function HamburgerMenu() {
 export function CloseIcon() {
   return (
     <svg
+      className='w-10 h-10 text-white'
       xmlns='http://www.w3.org/2000/svg'
       width='24'
       height='24'

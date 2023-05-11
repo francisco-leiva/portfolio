@@ -25,7 +25,7 @@ export default function Projects() {
 
   return (
     <section id='projects' className='max-w-4xl h-fit mx-auto mb-10 pt-16'>
-      <h3 className='my-4 text-[#f44336] font-bold text-xl text-center'>
+      <h3 className='mt-4 mb-8 text-[#f44336] font-bold text-2xl text-center'>
         PROYECTOS
       </h3>
 

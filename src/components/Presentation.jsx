@@ -11,8 +11,8 @@ export default function Presentation() {
           <h2 className='text-5xl'>{greeting}</h2>
 
           <p className='my-6 text-xl'>
-            Desarrollador Front-end con conocimiento en JavaScript. Apasionado
-            por la tecnología y la programación.
+            Desarrollador Front-end 💻. Apasionado por la tecnología y la
+            programación.
           </p>
 
           <div>

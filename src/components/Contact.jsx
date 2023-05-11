@@ -1,7 +1,9 @@
 export default function Contact() {
   return (
     <section id='contact' className='max-w-4xl h-fit mx-auto mb-10 pt-10'>
-      <h3 className='text-[#f44336] font-bold text-xl text-center'>CONTACTO</h3>
+      <h3 className='my-4 text-[#f44336] font-bold text-2xl text-center'>
+        CONTACTO
+      </h3>
 
       <form className='max-w-lg mx-auto'>
         <div className='my-5'>
