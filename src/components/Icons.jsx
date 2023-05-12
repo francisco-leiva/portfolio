@@ -158,7 +158,7 @@ export function CodeIcon() {
 export function HtmlIcon() {
   return (
     <svg
-      className='w-12 h-12'
+      className='w-12 h-12 skills'
       xmlns='http://www.w3.org/2000/svg'
       width='800'
       height='800'
@@ -178,7 +178,7 @@ export function HtmlIcon() {
 export function CssIcon() {
   return (
     <svg
-      className='w-12 h-12'
+      className='w-12 h-12 skills'
       xmlns='http://www.w3.org/2000/svg'
       width='800'
       height='800'
@@ -198,7 +198,7 @@ export function CssIcon() {
 export function JsIcon() {
   return (
     <svg
-      className='w-12 h-12'
+      className='w-12 h-12 skills'
       xmlns='http://www.w3.org/2000/svg'
       width='800'
       height='800'
@@ -217,7 +217,7 @@ export function JsIcon() {
 export function SassIcon() {
   return (
     <svg
-      className='w-12 h-12'
+      className='w-12 h-12 skills'
       xmlns='http://www.w3.org/2000/svg'
       width='800'
       height='800'
@@ -234,7 +234,7 @@ export function SassIcon() {
 export function TailwindIcon() {
   return (
     <svg
-      className='w-12 h-12'
+      className='w-12 h-12 skills'
       xmlns='http://www.w3.org/2000/svg'
       width='800'
       height='800'
@@ -251,7 +251,7 @@ export function TailwindIcon() {
 export function ReactIcon() {
   return (
     <svg
-      className='w-12 h-12'
+      className='w-12 h-12 skills'
       xmlns='http://www.w3.org/2000/svg'
       width='800'
       height='800'
@@ -275,7 +275,7 @@ export function ReactIcon() {
 export function ViteIcon() {
   return (
     <svg
-      className='w-12 h-12'
+      className='w-12 h-12 skills'
       xmlns='http://www.w3.org/2000/svg'
       width='800'
       height='800'
@@ -324,7 +324,7 @@ export function ViteIcon() {
 export function NextJsIcon() {
   return (
     <svg
-      className='w-12 h-12'
+      className='w-12 h-12 skills'
       xmlns='http://www.w3.org/2000/svg'
       width='800'
       height='800'
@@ -339,7 +339,7 @@ export function NextJsIcon() {
 export function GitIcon() {
   return (
     <svg
-      className='w-12 h-12'
+      className='w-12 h-12 skills'
       xmlns='http://www.w3.org/2000/svg'
       width='800'
       height='800'
@@ -361,7 +361,7 @@ export function GitIcon() {
 export function GithubIconSkills() {
   return (
     <svg
-      className='w-12 h-12'
+      className='w-12 h-12 skills'
       xmlns='http://www.w3.org/2000/svg'
       width='800'
       height='800'

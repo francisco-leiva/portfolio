@@ -27,11 +27,9 @@ export default function About() {
       </p>
 
       <div>
-        <h4 className='mb-2 text-[#f44336] font-bold text-xl text-center'>
-          SKILLS
-        </h4>
+        <h4 className='text-[#f44336] font-bold text-xl text-center'>SKILLS</h4>
 
-        <div className='flex justify-evenly flex-wrap'>
+        <div className='my-3 flex justify-evenly flex-wrap'>
           <HtmlIcon />
 
           <CssIcon />

@@ -54,7 +54,7 @@ export default function Projects() {
               </Typography>
             </CardContent>
 
-            <CardActions className='flex justify-center'>
+            <CardActions className='flex justify-evenly'>
               <Link
                 href='https://weather-app-franciscoleiva.netlify.app/'
                 className='px-4'
@@ -96,7 +96,7 @@ export default function Projects() {
               </Typography>
             </CardContent>
 
-            <CardActions className='flex justify-center'>
+            <CardActions className='flex justify-evenly'>
               <Link href='https://claroarg-react.netlify.app/' className='px-4'>
                 <WorldIcon />
               </Link>
@@ -139,7 +139,7 @@ export default function Projects() {
               </Typography>
             </CardContent>
 
-            <CardActions className='flex justify-center'>
+            <CardActions className='flex justify-evenly'>
               <Link href='https://blanco-y-negro.netlify.app/' className='px-4'>
                 <WorldIcon />
               </Link>
@@ -178,7 +178,7 @@ export default function Projects() {
               </Typography>
             </CardContent>
 
-            <CardActions className='flex justify-center'>
+            <CardActions className='flex justify-evenly'>
               <Link
                 href='https://advice-generator-franciscoleiva.netlify.app/'
                 className='px-4'

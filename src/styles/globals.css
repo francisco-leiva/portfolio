@@ -125,4 +125,14 @@
   .card:nth-child(4) {
     transition-delay: 600ms;
   }
+
+  .skills {
+    filter: grayscale(100%);
+    transition: ease 0.4s;
+  }
+
+  .skills:hover {
+    transform: scale(1.3);
+    filter: grayscale(0%);
+  }
 }
