@@ -19,11 +19,11 @@ export default function About() {
       </h3>
 
       <p className='m-4 text-xl text-justify'>
-        Soy un desarrollador web con conocimientos en Javascript y React, y
-        actualmente me encuentro en búsqueda de mi primer empleo. Tengo
-        experiencia en la creación de aplicaciones web utilizando estas
-        tecnologías, y estoy muy motivado para aplicar mis habilidades en un
-        ambiente de trabajo real.
+        Desarrollador web con conocimientos en Javascript y React. Actualmente
+        me encuentro en búsqueda de mi primer empleo. Cuento con experiencia en
+        estas tecnologías a través de la creación de proyectos personales, y
+        estoy muy motivado para aplicar mis habilidades en un ambiente de
+        trabajo real.
       </p>
 
       <div>

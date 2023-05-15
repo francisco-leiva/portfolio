@@ -13,12 +13,11 @@ export default function Navbar() {
 
   // useState for open the modal
   const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const handleOpen = () => setOpen(!open);
 
   return (
-    <header className='w-full h-16 bg-black fixed text-lg z-50'>
-      <nav className='max-w-4xl h-full mx-auto px-2 flex justify-between items-center md:px-0'>
+    <header className='w-screen h-16 bg-black fixed text-lg z-50'>
+      <nav className='max-w-4xl h-full mx-auto px-2 flex justify-between items-center lg:px-0'>
         <div>
           <Link href='/'>
             <NavbarLogo />
@@ -30,17 +29,23 @@ export default function Navbar() {
             <HamburgerMenu />
           </button>
 
-          <Modal open={open} onClose={handleClose}>
-            <div className='h-60 flex flex-col items-center bg-black'>
-              <button className='px-2 py-3 self-end' onClick={handleClose}>
-                <CloseIcon />
-              </button>
+          <Modal open={open} onClose={handleOpen}>
+            <div className='h-72 bg-black'>
+              <div className='h-16 px-2 flex justify-between items-center'>
+                <Link href='/'>
+                  <NavbarLogo />
+                </Link>
 
-              <ul className='text-white text-center text-xl'>
+                <button onClick={handleOpen}>
+                  <CloseIcon />
+                </button>
+              </div>
+
+              <ul className='text-white text-center text-2xl'>
                 {links.map((link, index) => {
                   return (
-                    <li key={index} className='block my-3'>
-                      <Link href={link.href} onClick={handleClose}>
+                    <li key={index} className='mx-auto my-4'>
+                      <Link href={link.href} onClick={handleOpen}>
                         {link.name}
                       </Link>
                     </li>
@@ -51,10 +56,10 @@ export default function Navbar() {
           </Modal>
         </div>
 
-        <ul className='hidden text-white sm:inline'>
+        <ul className='hidden text-white sm:flex sm:gap-6'>
           {links.map((link, index) => {
             return (
-              <li key={index} className='inline mx-5 first:ml-0 last:mr-0'>
+              <li key={index} className='listItem'>
                 <Link href={link.href}>{link.name}</Link>
               </li>
             );
