@@ -16,7 +16,7 @@ export default function Navbar() {
   const handleOpen = () => setOpen(!open);
 
   return (
-    <header className='w-screen h-16 bg-black fixed text-lg z-50'>
+    <header className='w-screen h-16 bg-[#ff0000] fixed text-lg z-50'>
       <nav className='max-w-4xl h-full mx-auto px-2 flex justify-between items-center lg:px-0'>
         <div>
           <Link href='/'>
@@ -30,7 +30,7 @@ export default function Navbar() {
           </button>
 
           <Modal open={open} onClose={handleOpen}>
-            <div className='h-72 bg-black'>
+            <div className='h-72 bg-[#ff0000]'>
               <div className='h-16 px-2 flex justify-between items-center'>
                 <Link href='/'>
                   <NavbarLogo />
@@ -56,7 +56,7 @@ export default function Navbar() {
           </Modal>
         </div>
 
-        <ul className='hidden text-white sm:flex sm:gap-6'>
+        <ul className='hidden text-white sm:flex sm:gap-8'>
           {links.map((link, index) => {
             return (
               <li key={index} className='listItem'>

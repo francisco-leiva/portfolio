@@ -14,7 +14,7 @@ import {
 export default function About() {
   return (
     <section id='about' className='max-w-4xl h-full mx-auto mb-10 pt-16'>
-      <h3 className='mt-4 text-[#f44336] font-bold text-2xl text-center'>
+      <h3 className='mt-4 bg-black text-white font-bold text-2xl text-center rounded-2xl'>
         SOBRE MI
       </h3>
 

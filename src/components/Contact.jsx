@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <section id='contact' className='max-w-4xl h-fit mx-auto mb-10 pt-10'>
-      <h3 className='my-4 text-[#f44336] font-bold text-2xl text-center'>
+      <h3 className='my-4 bg-black text-white font-bold text-2xl text-center rounded-2xl'>
         CONTACTO
       </h3>
 
