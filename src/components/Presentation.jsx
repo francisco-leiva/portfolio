@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import me from '../assets/me.jpg';
+import me from '../assets/me.webp';
 import { LinkedInIcon, GitHubIcon } from './Icons';
 
 export default function Presentation() {
@@ -18,13 +18,13 @@ export default function Presentation() {
           </p>
 
           <div className='text-center md:text-left'>
-            <button className='mx-4'>
+            <button className='mx-4' aria-label='Visit Github profile'>
               <Link href='https://github.com/francisco-leiva' target='_blank'>
                 <GitHubIcon />
               </Link>
             </button>
 
-            <button className='mx-4'>
+            <button className='mx-4' aria-label='Visit LinkedIn profile'>
               <Link
                 href='https://www.linkedin.com/in/franciscoleiva14/'
                 target='_blank'
@@ -35,8 +35,14 @@ export default function Presentation() {
           </div>
         </div>
 
-        <div className='w-64 h-64 mx-auto relative sm:w-72 sm:h-72 sm:mx-0 md:w-80 md:h-80'>
-          <Image src={me} alt='Me' fill={true} className='rounded-full' />
+        <div className='w-[17rem] h-[17rem] mx-auto sm:w-72 sm:h-72 sm:mx-0 md:w-80 md:h-80'>
+          <Image
+            src={me}
+            width={500}
+            height={500}
+            alt='Me'
+            className='object-contain rounded-full'
+          />
         </div>
       </div>
     </section>

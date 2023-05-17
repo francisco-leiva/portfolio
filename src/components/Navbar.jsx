@@ -19,20 +19,24 @@ export default function Navbar() {
     <header className='w-screen h-16 bg-[#ff0000] fixed text-lg z-50'>
       <nav className='max-w-4xl h-full mx-auto px-2 flex justify-between items-center lg:px-0'>
         <div>
-          <Link href='/'>
+          <Link href='/' aria-label='Go to home page'>
             <NavbarLogo />
           </Link>
         </div>
 
         <div className='sm:hidden'>
-          <button className='my-2' onClick={handleOpen}>
+          <button
+            className='my-2'
+            aria-label='Display page menu'
+            onClick={handleOpen}
+          >
             <HamburgerMenu />
           </button>
 
           <Modal open={open} onClose={handleOpen}>
             <div className='h-72 bg-[#ff0000]'>
               <div className='h-16 px-2 flex justify-between items-center'>
-                <Link href='/'>
+                <Link href='/' aria-label='Go to home page'>
                   <NavbarLogo />
                 </Link>
 

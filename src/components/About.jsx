@@ -18,7 +18,7 @@ export default function About() {
         SOBRE MI
       </h3>
 
-      <p className='m-4 text-xl text-justify'>
+      <p className='mx-4 my-8 text-xl text-justify'>
         Desarrollador web con conocimientos en Javascript y React. Actualmente
         me encuentro en búsqueda de mi primer empleo. Cuento con experiencia en
         estas tecnologías a través de la creación de proyectos personales, y
@@ -27,9 +27,11 @@ export default function About() {
       </p>
 
       <div>
-        <h4 className='text-[#f44336] font-bold text-xl text-center'>SKILLS</h4>
+        <h4 className='w-min mx-auto px-4 bg-black text-white font-bold text-xl text-center rounded-2xl'>
+          SKILLS
+        </h4>
 
-        <div className='my-3 flex justify-evenly flex-wrap'>
+        <div className='m-6 flex flex-wrap justify-evenly gap-8 sm:px-16 sm:gap-12 md:px-36'>
           <HtmlIcon />
 
           <CssIcon />
