@@ -29,7 +29,7 @@ export default function Projects() {
         PROYECTOS
       </h3>
 
-      <div ref={containerRef} className={'flex flex-wrap justify-around gap-4'}>
+      <div ref={containerRef} className='flex flex-wrap justify-around gap-4'>
         <article className='card'>
           <Card sx={{ maxWidth: 345 }} className='h-96 bg-[#DCDCDC]'>
             <Image src={weatherApp} alt='Weather App' sx={{ height: 140 }} />

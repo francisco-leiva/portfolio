@@ -29,7 +29,7 @@ export default function Presentation() {
                 href='https://www.linkedin.com/in/franciscoleiva14/'
                 target='_blank'
               >
-                <LinkedInIcon />
+                <LinkedInIcon width='40' height='40' />
               </Link>
             </button>
           </div>
