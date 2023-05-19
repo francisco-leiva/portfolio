@@ -14,11 +14,11 @@ import {
 export default function About() {
   return (
     <section id='about' className='max-w-4xl h-full mx-auto mb-10 pt-16'>
-      <h3 className='mt-4 bg-black text-white font-bold text-2xl text-center rounded-2xl'>
+      <h3 className='mt-4 bg-black text-white font-bold text-3xl text-center rounded-2xl'>
         SOBRE MI
       </h3>
 
-      <p className='mx-4 my-8 text-xl text-justify'>
+      <p className='mx-4 my-8 text-2xl text-justify font-medium'>
         Tengo 22 años y actualmente me encuentro en búsqueda de mi primer
         empleo. Cuento con habilidades en Javascript y React. Adquirí
         experiencia en estas tecnologías a través de la creación de proyectos
@@ -27,7 +27,7 @@ export default function About() {
       </p>
 
       <div>
-        <h4 className='w-min mx-auto px-4 bg-black text-white font-bold text-xl text-center rounded-2xl'>
+        <h4 className='w-min mx-auto px-4 bg-black text-white font-bold text-2xl text-center rounded-2xl'>
           SKILLS
         </h4>
 

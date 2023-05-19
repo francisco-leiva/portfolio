@@ -3,12 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: 'Roboto', sans-serif;
-  background: url('../../public/background-wave.svg') no-repeat fixed;
-  background-size: cover;
-}
-
 .listItem {
   display: inline-block;
   position: relative;

@@ -25,13 +25,13 @@ export default function Projects() {
 
   return (
     <section id='projects' className='max-w-4xl h-fit mx-auto mb-10 pt-16'>
-      <h3 className='mt-4 mb-8 bg-black text-white font-bold text-2xl text-center rounded-2xl'>
+      <h3 className='mt-4 mb-8 bg-black text-white font-bold text-3xl text-center rounded-2xl'>
         PROYECTOS
       </h3>
 
       <div ref={containerRef} className='flex flex-wrap justify-around gap-4'>
         <article className='card'>
-          <Card sx={{ maxWidth: 345 }} className='h-96 bg-[#DCDCDC]'>
+          <Card sx={{ maxWidth: 345 }} className='h-[27rem] bg-[#DCDCDC]'>
             <Image src={weatherApp} alt='Weather App' sx={{ height: 140 }} />
 
             <CardContent>
@@ -39,7 +39,7 @@ export default function Projects() {
                 gutterBottom
                 variant='h5'
                 component='div'
-                className='font-semibold text-center'
+                className='font-semibold text-3xl text-center'
               >
                 Weather App
               </Typography>
@@ -47,7 +47,7 @@ export default function Projects() {
               <Typography
                 variant='body2'
                 color='text.secondary'
-                className='text-base text-justify'
+                className='text-lg text-justify'
               >
                 Copia de la aplicación del tiempo de celulares Samsung.
                 Dependiendo del tipo de clima, la aplicación cambia de color.
@@ -73,15 +73,15 @@ export default function Projects() {
         </article>
 
         <article className='card'>
-          <Card sx={{ maxWidth: 345 }} className='h-96 bg-[#DCDCDC]'>
-            <Image src={claroApp} alt='Weather App' sx={{ height: 140 }} />
+          <Card sx={{ maxWidth: 345 }} className='h-[27rem] bg-[#DCDCDC]'>
+            <Image src={claroApp} alt='Claro App' sx={{ height: 140 }} />
 
             <CardContent>
               <Typography
                 gutterBottom
                 variant='h5'
                 component='div'
-                className='font-semibold text-center'
+                className='font-semibold text-3xl text-center'
               >
                 Claro Arg
               </Typography>
@@ -89,7 +89,7 @@ export default function Projects() {
               <Typography
                 variant='body2'
                 color='text.secondary'
-                className='text-base text-justify'
+                className='text-lg text-justify'
               >
                 Este proyecto es una copia de la tienda de Claro Argentina, la
                 cual se dedica a la venta de celulares y accesorios.
@@ -112,10 +112,10 @@ export default function Projects() {
         </article>
 
         <article className='card'>
-          <Card sx={{ maxWidth: 345 }} className='h-96 bg-[#DCDCDC]'>
+          <Card sx={{ maxWidth: 345 }} className='h-[27rem] bg-[#DCDCDC]'>
             <Image
               src={blancoYNegroApp}
-              alt='Weather App'
+              alt='Blanco y Negro App'
               sx={{ height: 140 }}
             />
 
@@ -124,7 +124,7 @@ export default function Projects() {
                 gutterBottom
                 variant='h5'
                 component='div'
-                className='font-semibold text-center'
+                className='font-semibold text-3xl text-center'
               >
                 Blanco y Negro
               </Typography>
@@ -132,7 +132,7 @@ export default function Projects() {
               <Typography
                 variant='body2'
                 color='text.secondary'
-                className='text-base text-justify'
+                className='text-lg text-justify'
               >
                 Tienda online inspirada en el comercio de un familiar. La misma
                 fue creada para el curso de JavaScript de CoderHouse.
@@ -155,15 +155,19 @@ export default function Projects() {
         </article>
 
         <article className='card'>
-          <Card sx={{ maxWidth: 345 }} className='h-96 bg-[#DCDCDC]'>
-            <Image src={adviceApp} alt='Weather App' sx={{ height: 140 }} />
+          <Card sx={{ maxWidth: 345 }} className='h-[27rem] bg-[#DCDCDC]'>
+            <Image
+              src={adviceApp}
+              alt='Advice Generator App'
+              sx={{ height: 140 }}
+            />
 
             <CardContent>
               <Typography
                 gutterBottom
                 variant='h5'
                 component='div'
-                className='font-semibold text-center'
+                className='font-semibold text-3xl text-center'
               >
                 Advice Generator
               </Typography>
@@ -171,7 +175,7 @@ export default function Projects() {
               <Typography
                 variant='body2'
                 color='text.secondary'
-                className='text-base text-justify'
+                className='text-lg text-justify'
               >
                 Desafío de Frontend Mentor que genera consejos aleatorios a
                 través de un llamado a una API.

@@ -10,9 +10,11 @@ export default function Presentation() {
     <section className='w-full h-[100svh]'>
       <div className='max-w-4xl h-full mx-auto pt-16 flex flex-col justify-center items-center gap-6 md:flex-row md:justify-around'>
         <div className='max-w-sm mx-auto md:mx-0'>
-          <h2 className='text-5xl text-center md:text-left'>{greeting}</h2>
+          <h2 className='text-5xl text-center font-semibold md:text-left'>
+            {greeting}
+          </h2>
 
-          <p className='my-6 text-xl text-center md:text-left'>
+          <p className='my-4 text-2xl text-center sm:my-6 md:text-left'>
             Desarrollador Front-end 💻. Apasionado por la tecnología y la
             programación.
           </p>
@@ -38,8 +40,8 @@ export default function Presentation() {
         <div className='w-[17rem] h-[17rem] mx-auto sm:w-72 sm:h-72 sm:mx-0 md:w-80 md:h-80'>
           <Image
             src={me}
-            width={500}
-            height={500}
+            width={272}
+            height={272}
             alt='Me'
             className='object-contain rounded-full'
           />
