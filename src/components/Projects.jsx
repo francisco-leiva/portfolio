@@ -1,7 +1,6 @@
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
 import useElementOnScreen from '@/hooks/useElementOnScreen';
 import { useEffect } from 'react';
 import Image from 'next/image';
@@ -31,27 +30,18 @@ export default function Projects() {
 
       <div ref={containerRef} className='flex flex-wrap justify-around gap-4'>
         <article className='card'>
-          <Card sx={{ maxWidth: 345 }} className='h-[27rem] bg-[#DCDCDC]'>
+          <Card sx={{ maxWidth: 345 }} className='h-[26rem] bg-[#DCDCDC]'>
             <Image src={weatherApp} alt='Weather App' sx={{ height: 140 }} />
 
             <CardContent>
-              <Typography
-                gutterBottom
-                variant='h5'
-                component='div'
-                className='font-semibold text-3xl text-center'
-              >
+              <h4 className='mb-3 font-semibold text-3xl text-center'>
                 Weather App
-              </Typography>
+              </h4>
 
-              <Typography
-                variant='body2'
-                color='text.secondary'
-                className='text-lg text-justify'
-              >
-                Copia de la aplicación del tiempo de celulares Samsung.
-                Dependiendo del tipo de clima, la aplicación cambia de color.
-              </Typography>
+              <p className='text-lg text-justify'>
+                Copia de aplicación del tiempo de celulares Samsung. Dependiendo
+                del tipo de clima, la web cambia de color.
+              </p>
             </CardContent>
 
             <CardActions className='flex justify-evenly'>
@@ -73,27 +63,18 @@ export default function Projects() {
         </article>
 
         <article className='card'>
-          <Card sx={{ maxWidth: 345 }} className='h-[27rem] bg-[#DCDCDC]'>
+          <Card sx={{ maxWidth: 345 }} className='h-[26rem] bg-[#DCDCDC]'>
             <Image src={claroApp} alt='Claro App' sx={{ height: 140 }} />
 
             <CardContent>
-              <Typography
-                gutterBottom
-                variant='h5'
-                component='div'
-                className='font-semibold text-3xl text-center'
-              >
+              <h4 className='mb-3 font-semibold text-3xl text-center'>
                 Claro Arg
-              </Typography>
+              </h4>
 
-              <Typography
-                variant='body2'
-                color='text.secondary'
-                className='text-lg text-justify'
-              >
+              <p className='text-lg text-justify'>
                 Este proyecto es una copia de la tienda de Claro Argentina, la
                 cual se dedica a la venta de celulares y accesorios.
-              </Typography>
+              </p>
             </CardContent>
 
             <CardActions className='flex justify-evenly'>
@@ -112,7 +93,7 @@ export default function Projects() {
         </article>
 
         <article className='card'>
-          <Card sx={{ maxWidth: 345 }} className='h-[27rem] bg-[#DCDCDC]'>
+          <Card sx={{ maxWidth: 345 }} className='h-[26rem] bg-[#DCDCDC]'>
             <Image
               src={blancoYNegroApp}
               alt='Blanco y Negro App'
@@ -120,23 +101,14 @@ export default function Projects() {
             />
 
             <CardContent>
-              <Typography
-                gutterBottom
-                variant='h5'
-                component='div'
-                className='font-semibold text-3xl text-center'
-              >
+              <h4 className='mb-3 font-semibold text-3xl text-center'>
                 Blanco y Negro
-              </Typography>
+              </h4>
 
-              <Typography
-                variant='body2'
-                color='text.secondary'
-                className='text-lg text-justify'
-              >
-                Tienda online inspirada en el comercio de un familiar. La misma
-                fue creada para el curso de JavaScript de CoderHouse.
-              </Typography>
+              <p className='text-lg text-justify'>
+                E-commerce inspirada en la tienda de un familiar. La misma fue
+                creada para el curso de JavaScript de CoderHouse.
+              </p>
             </CardContent>
 
             <CardActions className='flex justify-evenly'>
@@ -155,7 +127,7 @@ export default function Projects() {
         </article>
 
         <article className='card'>
-          <Card sx={{ maxWidth: 345 }} className='h-[27rem] bg-[#DCDCDC]'>
+          <Card sx={{ maxWidth: 345 }} className='h-[26rem] bg-[#DCDCDC]'>
             <Image
               src={adviceApp}
               alt='Advice Generator App'
@@ -163,23 +135,14 @@ export default function Projects() {
             />
 
             <CardContent>
-              <Typography
-                gutterBottom
-                variant='h5'
-                component='div'
-                className='font-semibold text-3xl text-center'
-              >
+              <h4 className='mb-3 font-semibold text-3xl text-center'>
                 Advice Generator
-              </Typography>
+              </h4>
 
-              <Typography
-                variant='body2'
-                color='text.secondary'
-                className='text-lg text-justify'
-              >
+              <p className='text-lg text-justify'>
                 Desafío de Frontend Mentor que genera consejos aleatorios a
                 través de un llamado a una API.
-              </Typography>
+              </p>
             </CardContent>
 
             <CardActions className='flex justify-evenly'>
