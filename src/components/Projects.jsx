@@ -30,7 +30,10 @@ export default function Projects() {
 
       <div ref={containerRef} className='flex flex-wrap justify-around gap-4'>
         <article className='card'>
-          <Card sx={{ maxWidth: 345 }} className='h-[26rem] bg-[#DCDCDC]'>
+          <Card
+            sx={{ maxWidth: 345, backgroundColor: '#DCDCDC' }}
+            className='h-[26rem]'
+          >
             <Image src={weatherApp} alt='Weather App' sx={{ height: 140 }} />
 
             <CardContent>
@@ -63,7 +66,10 @@ export default function Projects() {
         </article>
 
         <article className='card'>
-          <Card sx={{ maxWidth: 345 }} className='h-[26rem] bg-[#DCDCDC]'>
+          <Card
+            sx={{ maxWidth: 345, backgroundColor: '#DCDCDC' }}
+            className='h-[26rem]'
+          >
             <Image src={claroApp} alt='Claro App' sx={{ height: 140 }} />
 
             <CardContent>
@@ -93,7 +99,10 @@ export default function Projects() {
         </article>
 
         <article className='card'>
-          <Card sx={{ maxWidth: 345 }} className='h-[26rem] bg-[#DCDCDC]'>
+          <Card
+            sx={{ maxWidth: 345, backgroundColor: '#DCDCDC' }}
+            className='h-[26rem]'
+          >
             <Image
               src={blancoYNegroApp}
               alt='Blanco y Negro App'
@@ -127,7 +136,10 @@ export default function Projects() {
         </article>
 
         <article className='card'>
-          <Card sx={{ maxWidth: 345 }} className='h-[26rem] bg-[#DCDCDC]'>
+          <Card
+            sx={{ maxWidth: 345, backgroundColor: '#DCDCDC' }}
+            className='h-[26rem]'
+          >
             <Image
               src={adviceApp}
               alt='Advice Generator App'
