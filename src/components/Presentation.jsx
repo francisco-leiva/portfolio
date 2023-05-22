@@ -4,17 +4,17 @@ import me from '../assets/me.webp';
 import { LinkedInIcon, GitHubIcon } from './Icons';
 
 export default function Presentation() {
-  const greeting = '¡Hola, soy Francisco Leiva!';
+  const greeting = '¡Hola 👋, soy Francisco Leiva!';
 
   return (
     <section className='w-full h-[100svh]'>
-      <div className='max-w-4xl h-full mx-auto pt-16 flex flex-col justify-center items-center gap-6 md:flex-row md:justify-around'>
+      <div className='max-w-4xl h-full mx-auto pt-16 flex flex-col justify-center items-center gap-2 md:flex-row md:justify-around md:gap-6'>
         <div className='max-w-sm mx-auto md:mx-0'>
-          <h2 className='text-5xl text-center font-semibold md:text-left'>
+          <h1 className='text-5xl text-center font-semibold md:text-left'>
             {greeting}
-          </h2>
+          </h1>
 
-          <p className='my-4 text-2xl text-center sm:my-6 md:text-left'>
+          <p className='my-2 text-2xl text-center sm:my-6 md:text-left'>
             Desarrollador Front-end 💻. Apasionado por la tecnología y la
             programación.
           </p>

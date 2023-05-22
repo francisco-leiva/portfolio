@@ -24,9 +24,9 @@ export default function Projects() {
 
   return (
     <section id='projects' className='max-w-4xl h-fit mx-auto mb-10 pt-16'>
-      <h3 className='mt-4 mb-8 bg-black text-white font-bold text-3xl text-center rounded-2xl'>
+      <h2 className='mt-4 mb-8 bg-black text-white font-bold text-3xl text-center rounded-2xl'>
         PROYECTOS
-      </h3>
+      </h2>
 
       <div ref={containerRef} className='flex flex-wrap justify-around gap-4'>
         <article className='card'>
@@ -37,9 +37,9 @@ export default function Projects() {
             <Image src={weatherApp} alt='Weather App' sx={{ height: 140 }} />
 
             <CardContent>
-              <h4 className='mb-3 font-semibold text-3xl text-center'>
+              <h3 className='mb-3 font-semibold text-3xl text-center'>
                 Weather App
-              </h4>
+              </h3>
 
               <p className='text-lg text-justify'>
                 Copia de aplicación del tiempo de celulares Samsung. Dependiendo
@@ -73,9 +73,9 @@ export default function Projects() {
             <Image src={claroApp} alt='Claro App' sx={{ height: 140 }} />
 
             <CardContent>
-              <h4 className='mb-3 font-semibold text-3xl text-center'>
+              <h3 className='mb-3 font-semibold text-3xl text-center'>
                 Claro Arg
-              </h4>
+              </h3>
 
               <p className='text-lg text-justify'>
                 Este proyecto es una copia de la tienda de Claro Argentina, la
@@ -110,9 +110,9 @@ export default function Projects() {
             />
 
             <CardContent>
-              <h4 className='mb-3 font-semibold text-3xl text-center'>
+              <h3 className='mb-3 font-semibold text-3xl text-center'>
                 Blanco y Negro
-              </h4>
+              </h3>
 
               <p className='text-lg text-justify'>
                 E-commerce inspirada en la tienda de un familiar. La misma fue
@@ -147,9 +147,9 @@ export default function Projects() {
             />
 
             <CardContent>
-              <h4 className='mb-3 font-semibold text-3xl text-center'>
+              <h3 className='mb-3 font-semibold text-3xl text-center'>
                 Advice Generator
-              </h4>
+              </h3>
 
               <p className='text-lg text-justify'>
                 Desafío de Frontend Mentor que genera consejos aleatorios a
