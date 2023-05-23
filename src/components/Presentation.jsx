@@ -43,7 +43,7 @@ export default function Presentation() {
             width={272}
             height={272}
             alt='Me'
-            className='object-contain rounded-full'
+            className='w-full h-full rounded-full'
           />
         </div>
       </div>
