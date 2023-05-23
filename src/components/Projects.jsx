@@ -14,6 +14,7 @@ import { WorldIcon, CodeIcon } from './Icons';
 export default function Projects() {
   const [containerRef, isVisible] = useElementOnScreen();
 
+  // Reveal cards on scroll
   useEffect(() => {
     if (isVisible) {
       containerRef.current.querySelectorAll('article').forEach((el) => {

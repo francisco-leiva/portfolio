@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { NavbarLogo, HamburgerMenu, CloseIcon } from './Icons';
 
 export default function Navbar() {
+  // Navbar links variable
   const links = [
     { href: '/', name: 'Inicio' },
     { href: '/#about', name: 'Sobre mí' },
@@ -11,7 +12,7 @@ export default function Navbar() {
     { href: '/#contact', name: 'Contacto' },
   ];
 
-  // useState for open the modal
+  // variables to open the modal
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(!open);
 
