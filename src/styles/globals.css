@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(90deg, #d02020 0%, #ff896d 100%);
+}
+
 .listItem {
   display: inline-block;
   position: relative;
