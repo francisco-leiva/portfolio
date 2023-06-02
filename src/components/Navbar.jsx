@@ -17,7 +17,7 @@ export default function Navbar() {
   const handleOpen = () => setOpen(!open);
 
   return (
-    <header className='w-screen h-16 bg-[#ff0000] fixed text-lg z-50'>
+    <header className='w-screen h-16 bg-black fixed text-lg z-50'>
       <nav className='max-w-4xl h-full mx-auto px-2 flex justify-between items-center lg:px-0'>
         <div>
           <Link href='/' aria-label='Go to home page'>
@@ -35,7 +35,7 @@ export default function Navbar() {
           </button>
 
           <Modal open={open} onClose={handleOpen}>
-            <div className='h-72 bg-[#ff0000]'>
+            <div className='h-72 bg-black'>
               <div className='h-16 px-2 flex justify-between items-center'>
                 <Link href='/' aria-label='Go to home page'>
                   <NavbarLogo />
@@ -46,7 +46,7 @@ export default function Navbar() {
                 </button>
               </div>
 
-              <ul className='text-white text-center text-2xl'>
+              <ul className='text-white text-center text-2xl font-semibold'>
                 {links.map((link, index) => {
                   return (
                     <li key={index} className='mx-auto my-4'>

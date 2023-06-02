@@ -1,34 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-image: linear-gradient(90deg, #d02020 0%, #ff896d 100%);
+  font-family: 'Roboto Mono', monospace;
 }
 
 .listItem {
   display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
+  overflow: hidden;
 }
 
 .listItem::after {
   content: '';
   position: absolute;
-  width: 100%;
-  height: 0.2rem;
+  z-index: -1;
   left: 0;
+  right: 100%;
   bottom: 0;
-  background-color: white;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.6s ease-out;
+  background: white;
+  height: 0.2rem;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
 
 .listItem:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+  right: 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -45,25 +52,16 @@ body {
     transform: translateY(0%);
   }
 
-  .card:nth-child(2) {
-    transition-delay: 200ms;
-  }
-
-  .card:nth-child(3) {
+  .card:nth-child(3),
+  .card:nth-child(4) {
     transition-delay: 400ms;
   }
 
-  .card:nth-child(4) {
-    transition-delay: 600ms;
-  }
-
-  .skills {
-    filter: grayscale(100%);
+  .skills img {
     transition: ease 0.4s;
   }
 
-  .skills:hover {
+  .skills img:hover {
     transform: scale(1.3);
-    filter: grayscale(0%);
   }
 }

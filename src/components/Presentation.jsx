@@ -4,29 +4,32 @@ import me from '../assets/me.webp';
 import { LinkedInIcon, GitHubIcon } from './Icons';
 
 export default function Presentation() {
-  const greeting = '¡Hola 👋, soy Francisco Leiva!';
+  const greeting = '¡Hola 👋, soy Francisco!';
 
   return (
     <section className='w-full h-[100svh]'>
       <div className='max-w-4xl h-full mx-auto pt-16 flex flex-col justify-center items-center gap-2 md:flex-row md:justify-around md:gap-6'>
         <div className='max-w-sm mx-auto md:mx-0'>
-          <h1 className='text-5xl text-center font-semibold md:text-left'>
+          <h1 className='text-4xl leading-[3rem] text-center font-bold md:text-5xl md:leading-[4rem] md:text-center'>
             {greeting}
           </h1>
 
-          <p className='my-2 text-2xl text-center sm:my-6 md:text-left'>
+          <p className='my-4 mx-4 text-2xl text-justify sm:my-6 md:text-justify md:mx-0'>
             Desarrollador Front-end 💻. Apasionado por la tecnología y la
             programación.
           </p>
 
-          <div className='text-center md:text-left'>
-            <button className='mx-4' aria-label='Visit Github profile'>
+          <div className='text-center'>
+            <button className='mx-4 md:mx-8' aria-label='Visit Github profile'>
               <Link href='https://github.com/francisco-leiva' target='_blank'>
                 <GitHubIcon />
               </Link>
             </button>
 
-            <button className='mx-4' aria-label='Visit LinkedIn profile'>
+            <button
+              className='mx-4 md:mx-8'
+              aria-label='Visit LinkedIn profile'
+            >
               <Link
                 href='https://www.linkedin.com/in/franciscoleiva14/'
                 target='_blank'
