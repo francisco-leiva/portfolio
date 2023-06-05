@@ -7,7 +7,7 @@ export default function Presentation() {
   const greeting = '¡Hola 👋, soy Francisco!';
 
   return (
-    <section className='w-full h-[100svh]'>
+    <section id='home' className='w-full h-[100svh]'>
       <div className='max-w-4xl h-full mx-auto pt-16 flex flex-col justify-center items-center gap-2 md:flex-row md:justify-around md:gap-6'>
         <div className='max-w-sm mx-auto md:mx-0'>
           <h1 className='text-4xl leading-[3rem] text-center font-bold md:text-5xl md:leading-[4rem] md:text-center'>

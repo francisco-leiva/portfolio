@@ -29,7 +29,7 @@ export default function Projects() {
         PROYECTOS
       </h2>
 
-      <div ref={containerRef} className='flex flex-wrap justify-around gap-y-4'>
+      <div ref={containerRef} className='flex flex-wrap justify-around gap-y-5'>
         <article className='card'>
           <Card
             sx={{ maxWidth: 345, backgroundColor: '#DCDCDC' }}

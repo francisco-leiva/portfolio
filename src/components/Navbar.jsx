@@ -6,7 +6,7 @@ import { NavbarLogo, HamburgerMenu, CloseIcon } from './Icons';
 export default function Navbar() {
   // Navbar links variable
   const links = [
-    { href: '/', name: 'Inicio' },
+    { href: '/#home', name: 'Inicio' },
     { href: '/#about', name: 'Sobre mí' },
     { href: '/#projects', name: 'Proyectos' },
     { href: '/#contact', name: 'Contacto' },
@@ -50,7 +50,11 @@ export default function Navbar() {
                 {links.map((link, index) => {
                   return (
                     <li key={index} className='mx-auto my-4'>
-                      <Link href={link.href} onClick={handleOpen}>
+                      <Link
+                        href={link.href}
+                        onClick={handleOpen}
+                        scroll={false}
+                      >
                         {link.name}
                       </Link>
                     </li>
@@ -65,7 +69,9 @@ export default function Navbar() {
           {links.map((link, index) => {
             return (
               <li key={index} className='listItem'>
-                <Link href={link.href}>{link.name}</Link>
+                <Link href={link.href} scroll={false}>
+                  {link.name}
+                </Link>
               </li>
             );
           })}
