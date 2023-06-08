@@ -1,16 +1,29 @@
 import Image from 'next/image';
-import HtmlIcon from '../assets/html-svg.svg';
-import CssIcon from '../assets/css-svg.svg';
-import SassIcon from '../assets/sass-svg.svg';
-import TailwindIcon from '../assets/tailwind-svg.svg';
-import JsIcon from '../assets/js-svg.svg';
-import ReactIcon from '../assets/react-svg.svg';
-import ViteIcon from '../assets/vite-svg.svg';
-import NextJsIcon from '../assets/nextjs-svg.svg';
-import GitIcon from '../assets/git-svg.svg';
-import GithubIcon from '../assets/github-svg.svg';
+import HtmlIcon from '../svg/html-svg.svg';
+import CssIcon from '../svg/css-svg.svg';
+import SassIcon from '../svg/sass-svg.svg';
+import TailwindIcon from '../svg/tailwind-svg.svg';
+import JsIcon from '../svg/js-svg.svg';
+import ReactIcon from '../svg/react-svg.svg';
+import ViteIcon from '../svg/vite-svg.svg';
+import NextJsIcon from '../svg/nextjs-svg.svg';
+import GitIcon from '../svg/git-svg.svg';
+import GithubIcon from '../svg/github-svg.svg';
 
 export default function About() {
+  const skills = [
+    {name: 'HTML icon', icon: HtmlIcon},
+    {name: 'CSS icon', icon: CssIcon},
+    {name: 'SASS icon', icon: SassIcon},
+    {name: 'Tailwind icon', icon: TailwindIcon},
+    {name: 'JavaScript icon', icon: JsIcon},
+    {name: 'React.js icon', icon: ReactIcon},
+    {name: 'Vite.js icon', icon: ViteIcon},
+    {name: 'Next.js icon', icon: NextJsIcon},
+    {name: 'Git icon', icon: GitIcon},
+    {name: 'Github icon', icon: GithubIcon},
+  ]
+
   return (
     <section id='about' className='w-full py-16 bg-[#808080] lg:h-[100svh]'>
       <div className='max-w-4xl mx-auto'>
@@ -32,70 +45,11 @@ export default function About() {
           </h3>
 
           <div className='m-6 flex flex-wrap justify-evenly gap-8 sm:px-16 sm:gap-12 md:px-36'>
-            <div className='skills'>
-              <Image src={HtmlIcon} alt='HTML icon' width={56} height={56} />
-            </div>
-
-            <div className='skills'>
-              <Image src={CssIcon} alt='CSS icon' width={56} height={56} />
-            </div>
-
-            <div className='skills'>
-              <Image src={SassIcon} alt='SASS icon' width={56} height={56} />
-            </div>
-
-            <div className='skills'>
-              <Image
-                src={TailwindIcon}
-                alt='Tailwind icon'
-                width={56}
-                height={56}
-              />
-            </div>
-
-            <div className='skills'>
-              <Image
-                src={JsIcon}
-                alt='JavaScript icon'
-                width={56}
-                height={56}
-              />
-            </div>
-
-            <div className='skills'>
-              <Image
-                src={ReactIcon}
-                alt='React JS icon'
-                width={56}
-                height={56}
-              />
-            </div>
-
-            <div className='skills'>
-              <Image src={ViteIcon} alt='Vite JS icon' width={56} height={56} />
-            </div>
-
-            <div className='skills'>
-              <Image
-                src={NextJsIcon}
-                alt='Next JS icon'
-                width={56}
-                height={56}
-              />
-            </div>
-
-            <div className='skills'>
-              <Image src={GitIcon} alt='Git icon' width={56} height={56} />
-            </div>
-
-            <div className='skills'>
-              <Image
-                src={GithubIcon}
-                alt='Github icon'
-                width={56}
-                height={56}
-              />
-            </div>
+            {skills.map(skill => (
+              <div key={skill.name} className='skills'>
+                <Image src={skill.icon} alt={skill.name} width={56} height={56} />
+              </div>
+            ))}
           </div>
         </div>
       </div>
