@@ -8,7 +8,7 @@ export const projects = [
     title: 'Movies App',
     image: moviesAppImage,
     description:
-      'Aplicación de películas. Muestra próximos estrenos y permite encontrar títulos a través de un buscador.',
+      'Próximos estrenos de películas. Permite encontrar títulos a través de un buscador. (En desarrollo)',
     siteLink: 'https://movies-app-fleiva.vercel.app/',
     codeLink: 'https://github.com/francisco-leiva/movies-app',
   },
