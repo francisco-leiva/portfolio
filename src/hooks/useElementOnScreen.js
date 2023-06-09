@@ -7,18 +7,26 @@ export default function useElementOnScreen() {
   // Callback function for intersection observer
   const callbackFunction = (entries) => {
     const [entry] = entries;
-    setIsVisible(entry.isIntersecting);
+    if (entry.isIntersecting) {
+      setIsVisible(true);
+    }
   };
 
   // Call the observe method
   useEffect(() => {
+    const containerRefCurrent = containerRef.current;
     const observer = new IntersectionObserver(callbackFunction, {
       rootMargin: '0px',
       threshold: 0.2,
     });
-    observer.observe(containerRef.current);
 
-    return () => observer.disconnect();
+    if (containerRefCurrent) observer.observe(containerRefCurrent);
+
+    return () => {
+      if (containerRefCurrent) {
+        observer.unobserve(containerRefCurrent);
+      }
+    };
   }, [containerRef]);
 
   return [containerRef, isVisible];

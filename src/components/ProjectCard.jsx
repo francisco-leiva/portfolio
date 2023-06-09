@@ -13,29 +13,27 @@ export default function ProjectCard({
   codeLink,
 }) {
   return (
-    <article className='card'>
-      <Card
-        sx={{ maxWidth: 345, backgroundColor: '#DCDCDC' }}
-        className='h-[28rem]'
-      >
-        <Image src={image} alt={title} width={'1920'} height={'995'} />
+    <Card
+      sx={{ maxWidth: 345, backgroundColor: '#DCDCDC' }}
+      className='h-[28rem]'
+    >
+      <Image src={image} alt={title} width={'1920'} height={'995'} />
 
-        <CardContent>
-          <h3 className='mb-3 font-semibold text-3xl text-center'>{title}</h3>
+      <CardContent>
+        <h3 className='mb-3 font-semibold text-3xl text-center'>{title}</h3>
 
-          <p className='text-lg text-justify'>{description}</p>
-        </CardContent>
+        <p className='text-lg text-justify'>{description}</p>
+      </CardContent>
 
-        <CardActions className='px-4 py-2 flex justify-evenly'>
-          <Link href={siteLink} target='_blank' className='px-4'>
-            <WorldIcon />
-          </Link>
+      <CardActions className='px-4 py-2 flex justify-evenly'>
+        <Link href={siteLink} target='_blank' className='px-4'>
+          <WorldIcon />
+        </Link>
 
-          <Link href={codeLink} target='_blank' className='px-4'>
-            <CodeIcon />
-          </Link>
-        </CardActions>
-      </Card>
-    </article>
+        <Link href={codeLink} target='_blank' className='px-4'>
+          <CodeIcon />
+        </Link>
+      </CardActions>
+    </Card>
   );
 }
