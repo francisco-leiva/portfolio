@@ -27,11 +27,11 @@ export default function ProjectCard({
         </CardContent>
 
         <CardActions className='px-4 py-2 flex justify-evenly'>
-          <Link href={siteLink} className='px-4'>
+          <Link href={siteLink} target='_blank' className='px-4'>
             <WorldIcon />
           </Link>
 
-          <Link href={codeLink} className='px-4'>
+          <Link href={codeLink} target='_blank' className='px-4'>
             <CodeIcon />
           </Link>
         </CardActions>
