@@ -1,14 +1,14 @@
-import weatherAppImage from '../assets/weather-app.webp';
-import claroAppImage from '../assets/claroarg-app.webp';
-import blancoYNegroAppImage from '../assets/blanco-y-negro-app.webp';
-import moviesAppImage from '../assets/movies-app.webp';
+import weatherAppImage from '../assets/img/weather-app.webp'
+import claroAppImage from '../assets/img/claroarg-app.webp'
+import blancoYNegroAppImage from '../assets/img/blanco-y-negro-app.webp'
+import moviesAppImage from '../assets/img/movies-app.webp'
 
 export const projects = [
   {
     title: 'Movies App',
     image: moviesAppImage,
     description:
-      'Próximos estrenos de películas. Permite encontrar títulos a través de un buscador. (En desarrollo)',
+      'Próximos estrenos de películas. Permite encontrar títulos y conocer detalles sobre los mismos.',
     siteLink: 'https://movies-app-fleiva.vercel.app/',
     codeLink: 'https://github.com/francisco-leiva/movies-app',
   },
@@ -36,4 +36,4 @@ export const projects = [
     siteLink: 'https://blanco-y-negro.netlify.app/',
     codeLink: 'https://github.com/francisco-leiva/javascript',
   },
-];
+]

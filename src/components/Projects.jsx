@@ -1,9 +1,9 @@
-import useElementOnScreen from '@/hooks/useElementOnScreen';
-import { projects } from '@/consts/projectsData';
-import ProjectCard from './ProjectCard';
+import useElementOnScreen from '@/hooks/useElementOnScreen'
+import { projects } from '@/utils/projectsData'
+import ProjectCard from './ProjectCard'
 
 export default function Projects() {
-  const [containerRef, isVisible] = useElementOnScreen();
+  const [containerRef, isVisible] = useElementOnScreen()
 
   return (
     <section id='projects' className='max-w-4xl h-fit mx-auto py-16'>
@@ -28,5 +28,5 @@ export default function Projects() {
         ))}
       </div>
     </section>
-  );
+  )
 }

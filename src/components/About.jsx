@@ -1,27 +1,27 @@
-import Image from 'next/image';
-import HtmlIcon from '../svg/html-svg.svg';
-import CssIcon from '../svg/css-svg.svg';
-import SassIcon from '../svg/sass-svg.svg';
-import TailwindIcon from '../svg/tailwind-svg.svg';
-import JsIcon from '../svg/js-svg.svg';
-import ReactIcon from '../svg/react-svg.svg';
-import ViteIcon from '../svg/vite-svg.svg';
-import NextJsIcon from '../svg/nextjs-svg.svg';
-import GitIcon from '../svg/git-svg.svg';
-import GithubIcon from '../svg/github-svg.svg';
+import Image from 'next/image'
+import HtmlIcon from '../assets/svg/html-svg.svg'
+import CssIcon from '../assets/svg/css-svg.svg'
+import SassIcon from '../assets/svg/sass-svg.svg'
+import TailwindIcon from '../assets/svg/tailwind-svg.svg'
+import JsIcon from '../assets/svg/js-svg.svg'
+import ReactIcon from '../assets/svg/react-svg.svg'
+import ViteIcon from '../assets/svg/vite-svg.svg'
+import NextJsIcon from '../assets/svg/nextjs-svg.svg'
+import GitIcon from '../assets/svg/git-svg.svg'
+import GithubIcon from '../assets/svg/github-svg.svg'
 
 export default function About() {
   const skills = [
-    {name: 'HTML icon', icon: HtmlIcon},
-    {name: 'CSS icon', icon: CssIcon},
-    {name: 'SASS icon', icon: SassIcon},
-    {name: 'Tailwind icon', icon: TailwindIcon},
-    {name: 'JavaScript icon', icon: JsIcon},
-    {name: 'React.js icon', icon: ReactIcon},
-    {name: 'Vite.js icon', icon: ViteIcon},
-    {name: 'Next.js icon', icon: NextJsIcon},
-    {name: 'Git icon', icon: GitIcon},
-    {name: 'Github icon', icon: GithubIcon},
+    { id: 1, name: 'HTML icon', icon: HtmlIcon },
+    { id: 2, name: 'CSS icon', icon: CssIcon },
+    { id: 3, name: 'SASS icon', icon: SassIcon },
+    { id: 4, name: 'Tailwind icon', icon: TailwindIcon },
+    { id: 5, name: 'JavaScript icon', icon: JsIcon },
+    { id: 6, name: 'React.js icon', icon: ReactIcon },
+    { id: 7, name: 'Vite.js icon', icon: ViteIcon },
+    { id: 8, name: 'Next.js icon', icon: NextJsIcon },
+    { id: 9, name: 'Git icon', icon: GitIcon },
+    { id: 10, name: 'Github icon', icon: GithubIcon },
   ]
 
   return (
@@ -45,14 +45,19 @@ export default function About() {
           </h3>
 
           <div className='m-6 flex flex-wrap justify-evenly gap-8 sm:px-16 sm:gap-12 md:px-36'>
-            {skills.map(skill => (
-              <div key={skill.name} className='skills'>
-                <Image src={skill.icon} alt={skill.name} width={56} height={56} />
+            {skills.map((skill) => (
+              <div key={skill.id} className='skills'>
+                <Image
+                  src={skill.icon}
+                  alt={skill.name}
+                  width={56}
+                  height={56}
+                />
               </div>
             ))}
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }

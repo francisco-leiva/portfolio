@@ -1,10 +1,10 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import me from '../assets/me.webp';
-import { LinkedInIcon, GitHubIcon } from './Icons';
+import Link from 'next/link'
+import Image from 'next/image'
+import me from '../assets/img/me.webp'
+import { LinkedInIcon, GitHubIcon } from './Icons'
 
 export default function Presentation() {
-  const greeting = '¡Hola 👋, soy Francisco!';
+  const greeting = '¡Hola 👋, soy Francisco!'
 
   return (
     <section id='home' className='w-full h-[100svh]'>
@@ -21,20 +21,25 @@ export default function Presentation() {
 
           <div className='text-center'>
             <button className='mx-4 md:mx-8' aria-label='Visit Github profile'>
-              <Link href='https://github.com/francisco-leiva' target='_blank'>
+              <Link
+                href='https://github.com/francisco-leiva'
+                target='_blank'
+                aria-label='Visit my Github profile'
+              >
                 <GitHubIcon />
               </Link>
             </button>
 
             <button
               className='mx-4 md:mx-8'
-              aria-label='Visit LinkedIn profile'
+              aria-label='Visit my LinkedIn profile'
             >
               <Link
                 href='https://www.linkedin.com/in/franciscoleiva14/'
                 target='_blank'
+                aria-label='Visit my LinkedIn profile'
               >
-                <LinkedInIcon width='40' height='40' />
+                <LinkedInIcon />
               </Link>
             </button>
           </div>
@@ -47,9 +52,10 @@ export default function Presentation() {
             height={272}
             alt='Me'
             className='w-full h-full rounded-full'
+            priority
           />
         </div>
       </div>
     </section>
-  );
+  )
 }
