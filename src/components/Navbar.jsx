@@ -1,82 +1,54 @@
-import Modal from '@mui/material/Modal';
-import { useState } from 'react';
-import Link from 'next/link';
-import { NavbarLogo, HamburgerMenu, CloseIcon } from './Icons';
+import { useState } from 'react'
+import Link from 'next/link'
+import { NavbarLogo, HamburgerMenu } from './Icons'
 
 export default function Navbar() {
-  // Navbar links variable
+  // Navbar links
   const links = [
     { href: '/#home', name: 'Inicio' },
     { href: '/#about', name: 'Sobre mí' },
     { href: '/#projects', name: 'Proyectos' },
     { href: '/#contact', name: 'Contacto' },
-  ];
+  ]
 
-  // variables to open the modal
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(!open);
+  // state to open navbar
+  const [open, setOpen] = useState(false)
+  const handleOpen = () => setOpen(!open)
+  const handleClose = () => setOpen(false)
 
   return (
-    <header className='w-screen h-16 bg-black fixed text-lg z-50'>
-      <nav className='max-w-4xl h-full mx-auto px-2 flex justify-between items-center lg:px-0'>
-        <div>
+    <header
+      className={`w-screen h-16 bg-black text-white fixed text-lg z-50 ${
+        open ? 'open' : ''
+      }`}
+    >
+      <nav className='max-w-4xl mx-auto px-2 flex flex-col items-center sm:flex-row sm:justify-between lg:px-0'>
+        <div className='w-full h-16 flex justify-between items-center sm:w-fit'>
           <Link href='/' aria-label='Go to home page'>
             <NavbarLogo />
           </Link>
-        </div>
 
-        <div className='sm:hidden'>
           <button
-            className='my-2'
+            className='sm:hidden'
             aria-label='Display page menu'
             onClick={handleOpen}
           >
             <HamburgerMenu />
           </button>
-
-          <Modal open={open} onClose={handleOpen}>
-            <div className='h-72 bg-black'>
-              <div className='h-16 px-2 flex justify-between items-center'>
-                <Link href='/' aria-label='Go to home page'>
-                  <NavbarLogo />
-                </Link>
-
-                <button onClick={handleOpen}>
-                  <CloseIcon />
-                </button>
-              </div>
-
-              <ul className='text-white text-center text-2xl font-semibold'>
-                {links.map((link, index) => {
-                  return (
-                    <li key={index} className='mx-auto my-4'>
-                      <Link
-                        href={link.href}
-                        onClick={handleOpen}
-                        scroll={false}
-                      >
-                        {link.name}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          </Modal>
         </div>
 
-        <ul className='hidden text-white sm:flex sm:gap-8'>
-          {links.map((link, index) => {
+        <ul className={`hidden sm:flex sm:gap-8 ${open ? 'open' : ''}`}>
+          {links.map((link) => {
             return (
-              <li key={index} className='listItem'>
-                <Link href={link.href} scroll={false}>
+              <li key={link.name} className='listItem'>
+                <Link href={link.href} onClick={handleClose} scroll={false}>
                   {link.name}
                 </Link>
               </li>
-            );
+            )
           })}
         </ul>
       </nav>
     </header>
-  );
+  )
 }

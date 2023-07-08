@@ -18,7 +18,7 @@ export function NavbarLogo() {
         d='M13.5 6L10 18.5m-3.5-10L3 12l3.5 3.5m11-7L21 12l-3.5 3.5'
       ></path>
     </svg>
-  );
+  )
 }
 
 export function HamburgerMenu() {
@@ -38,27 +38,7 @@ export function HamburgerMenu() {
       <path stroke='none' d='M0 0h24v24H0z'></path>
       <path d='M4 6h16M4 12h16M4 18h16'></path>
     </svg>
-  );
-}
-
-export function CloseIcon() {
-  return (
-    <svg
-      className='w-10 h-10 text-white'
-      xmlns='http://www.w3.org/2000/svg'
-      width='24'
-      height='24'
-      fill='none'
-      stroke='currentColor'
-      strokeLinecap='round'
-      strokeLinejoin='round'
-      strokeWidth='2'
-      viewBox='0 0 24 24'
-    >
-      <path stroke='none' d='M0 0h24v24H0z'></path>
-      <path d='M18 6L6 18M6 6l12 12'></path>
-    </svg>
-  );
+  )
 }
 
 export function GitHubIcon() {
@@ -80,7 +60,7 @@ export function GitHubIcon() {
         d='M16 22.027v-2.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7a5.44 5.44 0 00-1.5-3.75 5.07 5.07 0 00-.09-3.77s-1.18-.35-3.91 1.48a13.38 13.38 0 00-7 0c-2.73-1.83-3.91-1.48-3.91-1.48A5.07 5.07 0 005 5.797a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7a3.37 3.37 0 00-.94 2.58v2.87m0-2c-3 .973-5.5 0-7-3'
       ></path>
     </svg>
-  );
+  )
 }
 
 export function LinkedInIcon() {
@@ -101,7 +81,7 @@ export function LinkedInIcon() {
       <path d='M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2zM8 11v5M8 8v.01M12 16v-5'></path>
       <path d='M16 16v-3a2 2 0 00-4 0'></path>
     </svg>
-  );
+  )
 }
 
 export function WorldIcon() {
@@ -121,7 +101,7 @@ export function WorldIcon() {
       <path stroke='none' d='M0 0h24v24H0z'></path>
       <path d='M3 12a9 9 0 1018 0 9 9 0 00-18 0M3.6 9h16.8M3.6 15h16.8M11.5 3a17 17 0 000 18M12.5 3a17 17 0 010 18'></path>
     </svg>
-  );
+  )
 }
 
 export function CodeIcon() {
@@ -142,7 +122,7 @@ export function CodeIcon() {
         d='M9 21H8c-1.105 0-2-.894-2-1.999V14c0-1-1.5-2-1.5-2S6 11 6 10V5a2 2 0 012-2h1m6 18h1c1.105 0 2-.894 2-1.999V14c0-1 1.5-2 1.5-2S18 11 18 10V5a2 2 0 00-2-2h-1'
       ></path>
     </svg>
-  );
+  )
 }
 
 export function MailContact() {
@@ -168,7 +148,7 @@ export function MailContact() {
         d='M2 17V7a2 2 0 012-2h16a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2z'
       ></path>
     </svg>
-  );
+  )
 }
 
 export function LinkedInContact() {
@@ -196,5 +176,5 @@ export function LinkedInContact() {
         d='M11 17v-3.25M11 10v3.75m0 0c0-3.75 6-3.75 6 0V17M7 7.01l.01-.011'
       ></path>
     </svg>
-  );
+  )
 }
