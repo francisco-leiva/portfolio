@@ -23,7 +23,7 @@ nav ul.open {
   gap: 1.75rem;
   font-size: 1.5rem;
   font-weight: 600;
-  animation: fadeInLinks 2.35s ease;
+  animation: fadeIn 2.25s both;
 }
 
 @media screen and (min-width: 1024px) {
@@ -63,11 +63,12 @@ nav ul.open {
   }
 
   .card.visible {
-    animation: fadeInBottom 1s both;
+    -webkit-animation: fadeInUp 1s both;
+    animation: fadeInUp 1s both;
   }
 
-  .card:nth-child(3),
-  .card:nth-child(4) {
+  .card.visible:nth-child(3),
+  .card.visible:nth-child(4) {
     animation-delay: 600ms;
   }
 
@@ -80,7 +81,7 @@ nav ul.open {
   }
 }
 
-@keyframes fadeInLinks {
+@keyframes fadeIn {
   from {
     opacity: 0;
   }
@@ -89,12 +90,15 @@ nav ul.open {
   }
 }
 
-@keyframes fadeInBottom {
+@keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(100%);
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
   }
   to {
     opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
